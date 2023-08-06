@@ -1,0 +1,94 @@
+header {
+  background-color: lightgray;
+  display: flex;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+header>h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.searchButton {
+  border-radius: 5px;
+  border-color: #10bd00;
+  background-color: white;
+  color: #10bd00;
+}
+
+.search {
+  border-radius: 5px;
+}
+
+.cartButton {
+  background-color: #10bd00;
+  border-color: #10bd00;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bodycontainer {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  border: #666;
+}
+
+.card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.card-img-top {
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  border-top: 1em lightgray;
+  background: #d1cdcd;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    grid-template-columns: auto;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+}
